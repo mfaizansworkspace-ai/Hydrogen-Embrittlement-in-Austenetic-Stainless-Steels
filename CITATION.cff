@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "HE-Austenite: an open dataset of hydrogen embrittlement in austenitic stainless steels tested in hydrogen gas"
+message: "If you use this dataset, please cite it."
+type: dataset
+abstract: >-
+  113 records of hydrogen embrittlement in austenitic stainless steels in which
+  hydrogen was introduced as a gas, extracted by hand from the tables of nine
+  published sources dated 1983 to 2024. The weld zone is recorded for every
+  record, and zone is cross-tabulated against alloy family so that the two can
+  be separated. Electrochemically charged studies are excluded. Released with
+  the extraction schema, the validation and cleaning code, and the figure code.
+  Version 0.2 adds the published composition of the heat, weld deposit or filler
+  tested in each record, together with a nickel equivalent recomputed on a single
+  expression and Angel Md30.
+authors:
+  - given-names: Muhammad
+    family-names: Faizan
+    email: m.faizansworkspace@gmail.com
+version: "0.2"
+date-released: "2026-10-02"
+license: CC-BY-4.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"
+repository-code: "https://github.com/mfaizansworkspace-ai/Hydrogen-Embrittlement-in-Austenitic-SS"
+keywords:
+  - hydrogen embrittlement
+  - austenitic stainless steel
+  - weld metal
+  - delta ferrite
+  - gaseous hydrogen
+  - relative reduction of area
+  - literature-extracted dataset
