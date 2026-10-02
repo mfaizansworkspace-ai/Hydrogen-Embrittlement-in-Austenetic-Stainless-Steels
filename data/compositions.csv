@@ -1,0 +1,32 @@
+comp_key,material_label,composition_basis,derive_nieq,derive_md30,composition_source,C,Si,Mn,Cr,Ni,Mo,N,Cu,Nb,Ti,notes
+SAND-2101-W69,304L heat W69,heat_analysis,yes,yes,SAND2012-7321 chapter 2101 Table 1.1.1,0.20,0.49,1.78,18.5,9.78,0.09,,0.10,,,C = 0.20 wt% is printed in the source and is unusually high for 304L; value recorded as published
+SAND-2101-O76,304L heat O76,heat_analysis,yes,yes,SAND2012-7321 chapter 2101 Table 1.1.1,0.026,0.63,1.51,19.10,9.41,,,,,,
+SAND-2101-O76N,304LN heat O76N,heat_analysis,yes,yes,SAND2012-7321 chapter 2101 Table 1.1.1,0.031,0.39,1.73,19.75,8.35,,0.25,,,,
+SAND-2101-C83,304L heat C83,heat_analysis,yes,yes,SAND2012-7321 chapter 2101 Table 1.1.1,0.03,0.43,1.57,18.35,10.29,0.17,,,,,Same heat analysis as Caskey DP-1643 Data Sheet D-1
+SAND-2101-C83N,304N heat C83N,heat_analysis,yes,yes,SAND2012-7321 chapter 2101 Table 1.1.1,0.06,0.19,1.66,18.37,8.43,0.10,0.25,0.15,,,Same heat analysis as Caskey DP-1643 Data Sheet D-10
+SAND-2101-B83w,304L/308L GTA weld fusion zone heat B83w,heat_analysis,yes,yes,SAND2012-7321 chapter 2101 Table 1.1.1,0.02,0.56,1.8,19.8,10.4,,0.04,,,,"Fusion zone analysis; base metal is HERF 304L, filler 308L"
+SAND-2103-W69,316 heat W69,heat_analysis,yes,yes,SAND2012-7321 chapter 2103 Table 1.1.1,0.05,0.56,1.73,17.52,12.45,2.67,,0.22,,,
+SAND-2103-O76,316 heat O76,heat_analysis,yes,yes,SAND2012-7321 chapter 2103 Table 1.1.1,0.061,0.71,1.56,17.41,13.51,2.53,,,,,
+SAND-2103-R84,316L heat R84,heat_analysis,yes,yes,SAND2012-7321 chapter 2103 Table 1.1.1,0.029,0.6,1.4,17.7,10.2,1.6,,,,,Designated 316L in the source
+SAND-2104-W73,321 heat W73,heat_analysis,yes,yes,SAND2012-7321 chapter 2104 Table 1.1.2,0.06,0.58,1.46,17.80,10.45,,,,,0.51,"32 mm plate, hot rolled and annealed"
+SAND-2104-H73,347 heat H73,heat_analysis,yes,yes,SAND2012-7321 chapter 2104 Table 1.1.2,0.06,0.94,2.0,18.4,10.10,,,,0.83,,Nb value is Nb+Ta
+SAND-2201-C83,22-13-5 heat C83,heat_analysis,yes,yes,SAND2012-7321 chapter 2201 Table 1.1.1,0.05,0.42,5.44,21.48,12.36,2.12,0.25,,0.19,,0.2 V also reported
+SAND-2201-O76,22-13-5 heat O76,heat_analysis,yes,yes,SAND2012-7321 chapter 2201 Table 1.1.1,0.050,0.36,4.68,23.00,12.98,1.75,0.38,,,,
+SAND-2201-O75,22-13-5 heat O75,heat_analysis,yes,yes,SAND2012-7321 chapter 2201 Table 1.1.1,0.050,0.50,5.26,22.15,12.74,2.20,0.34,,0.23,,0.26 V also reported
+SAND-2202-B83aw,21-6-9 base / ER308L filler weld fusion zone heat B83aw,heat_analysis,yes,yes,SAND2012-7321 chapter 2202 Table 1.1.1,0.03,0.61,8.1,20.8,8.8,,0.17,,,,Fusion zone analysis
+SAND-2202-B83bw,21-6-9 base / 21-6-9 filler weld fusion zone heat B83bw,heat_analysis,yes,yes,SAND2012-7321 chapter 2202 Table 1.1.1,0.03,0.60,9.3,20.7,7.8,,0.27,,,,Fusion zone analysis
+SAND-1600-S07,2507 duplex heat S07,heat_analysis,no,no,SAND2012-7321 chapter 1600 Table 1.1.2,0.011,0.25,0.46,25.22,6.94,3.9,0.287,,,,Two-phase duplex alloy; neither the Ni equivalent nor Md30 applies and neither is computed
+CASKEY-304L,304L Savannah River heat,heat_analysis,yes,yes,Caskey DP-1643 Appendix D Data Sheet D-1,0.03,0.43,1.57,18.35,10.29,0.17,,,,,Matches SAND2012-7321 heat C83
+CASKEY-N40,Nitronic 40 (21-6-9) Savannah River heat,heat_analysis,yes,yes,Caskey DP-1643 Appendix D Data Sheet D-5,0.015,0.24,9.01,20.32,6.71,,0.35,,,,Matches SAND2012-7321 21-6-9 heat C83
+CASKEY-310-NOM,310 nominal,nominal,no,no,Caskey DP-1643 Table A-1,0.25,,,25,20,,,,,,Nominal composition only; no heat analysis published for this alloy in DP-1643
+BALCH-WELD,304L base / 308L filler multipass GTA weld deposit,heat_analysis,yes,yes,Balch et al. PVP2015-45591 Table 1,0.028,0.5,1.56,20.5,10.3,0.01,0.055,,,,Weld deposit analysis; value already present in v1.0
+YOUNES-BASE,304L tube base metal,heat_analysis,yes,yes,"Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864, Table 1",0.02,0.40,1.65,18.70,10.50,0.01,0.05,0.03,,,"P 0.01, S 0.01 also reported"
+YOUNES-TIG,304L TIG weld metal,heat_analysis,yes,yes,"Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864, Table 1",0.02,0.38,1.70,19.80,10.40,0.01,0.04,0.04,0.01,0.01,"P 0.01, S 0.01 also reported"
+YOUNES-EB,304L electron beam weld metal,heat_analysis,no,no,"Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864, Table 1",,0.4,1.7,18.6,10.3,,,,,,"EDS average over five areas of the fusion zone; C, Mo and N not detected, so Ni equivalent is not computed"
+MICHLER-S7,SUS 316L Steel 7 drawn bar,heat_analysis,yes,yes,"Michler et al., Int. J. Hydrogen Energy 34 (2009) 3201, Table 1 (mill 3.1B certificate)",0.019,0.49,1.41,17.13,12.19,2.05,0.019,,,,
+MICHLER-S8,SUS 316L Steel 8 rolled plate,heat_analysis,yes,yes,"Michler et al., Int. J. Hydrogen Energy 34 (2009) 3201, Table 1 (mill 3.1B certificate)",0.016,0.68,1.19,17.4,12.15,2.057,0.026,,,,
+NAKA-P,SUS316 (hi-Ni) base metal heat P,heat_analysis,yes,yes,"Nakamura et al., Trans. JSME 84 (2018) 17-00437, Table 1",0.070,0.48,1.74,16.95,13.53,2.51,,,,,Heat P identified from section 2 of the paper as the base metal of the multipass welded bar
+NAKA-a,317L filler metal heat a,heat_analysis,yes,yes,"Nakamura et al., Trans. JSME 84 (2018) 17-00437, Table 2",0.011,0.44,1.56,18.59,13.06,3.04,,0.14,,,Filler analysis; weld metal dilution by the heat P base metal is not accounted for in the source
+FUKU-316CW,SUS316 cold worked,heat_analysis,yes,yes,"Fukunaga, Eng. Fail. Anal. 160 (2024) 108158, Table 1",0.066,0.42,1.67,16.87,12.34,2.49,0.069,0.01,,,
+FUKU-A286,A286,heat_analysis,yes,no,"Fukunaga, Eng. Fail. Anal. 160 (2024) 108158, Table 1",0.037,0.11,0.38,13.64,24.01,1.08,0.004,0.16,,,"Precipitation-strengthened Fe-base alloy; Md30 does not apply and is not computed. The source prints Nieq = 34.8, which the Hirayama expression reproduces."
+IYER-304,304 strip,heat_analysis,yes,yes,"Iyer, Can. Metall. Q. 28 (1989) 153, section 2",0.10,0.50,1.50,18.40,10.20,,,,,,S 0.05 and P 0.05 also reported; Mo and N not reported

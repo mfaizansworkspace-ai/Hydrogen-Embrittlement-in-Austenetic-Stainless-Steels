@@ -1,0 +1,335 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "HE-Austenite record",
+ "type": "object",
+ "required": [
+  "record_id",
+  "doi",
+  "first_author",
+  "year",
+  "alloy_grade",
+  "zone",
+  "hydrogen_exposure",
+  "test_type",
+  "property_reference",
+  "property_h2",
+  "property_name",
+  "reference_environment"
+ ],
+ "properties": {
+  "record_id": {
+   "type": "string"
+  },
+  "doi": {
+   "type": "string"
+  },
+  "first_author": {
+   "type": "string"
+  },
+  "year": {
+   "type": "integer",
+   "minimum": 1960,
+   "maximum": 2030
+  },
+  "open_access": {
+   "type": "boolean"
+  },
+  "alloy_grade": {
+   "type": "string",
+   "description": "as reported, e.g. 316L, 304, SUS316CW, UNS S20910"
+  },
+  "uns_number": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "product_form": {
+   "enum": [
+    "plate",
+    "sheet",
+    "bar",
+    "tube",
+    "pipe",
+    "weld",
+    "forging",
+    "other",
+    "unknown"
+   ]
+  },
+  "weld_process": {
+   "enum": [
+    "GTAW",
+    "GMAW",
+    "PAW",
+    "EBW",
+    "laser",
+    "laser-arc hybrid",
+    "SMAW",
+    "none",
+    "unknown"
+   ]
+  },
+  "heat_input_kJ_per_mm": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "filler_metal": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "zone": {
+   "enum": [
+    "base metal",
+    "weld metal",
+    "HAZ",
+    "fusion line",
+    "whole joint"
+   ]
+  },
+  "composition_wt_pct": {
+   "type": "object",
+   "properties": {
+    "C": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "Cr": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "Ni": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "Mo": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "Mn": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "N": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "Si": {
+     "type": [
+      "number",
+      "null"
+     ]
+    },
+    "Cu": {
+     "type": [
+      "number",
+      "null"
+     ]
+    }
+   }
+  },
+  "ni_equivalent": {
+   "type": [
+    "number",
+    "null"
+   ],
+   "description": "derived if derived_fields lists it"
+  },
+  "delta_ferrite_pct": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "pre_strain_pct": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "hydrogen_exposure": {
+   "enum": [
+    "gaseous in-situ",
+    "gaseous precharge",
+    "electrochemical charging",
+    "thermal precharge",
+    "none"
+   ]
+  },
+  "h2_pressure_MPa": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "charging_current_density_A_per_m2": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "charging_time_h": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "hydrogen_content_wt_ppm": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "test_temperature_K": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "strain_rate_per_s": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "test_type": {
+   "enum": [
+    "SSRT",
+    "tensile",
+    "fatigue",
+    "fracture toughness",
+    "small punch",
+    "CTOD"
+   ]
+  },
+  "property_name": {
+   "enum": [
+    "reduction of area",
+    "elongation",
+    "tensile strength",
+    "fatigue life",
+    "fracture toughness",
+    "plastic strain to failure",
+    "notched tensile strength",
+    "impact energy"
+   ]
+  },
+  "property_h2": {
+   "type": [
+    "number",
+    "null"
+   ]
+  },
+  "relative_ratio": {
+   "type": [
+    "number",
+    "null"
+   ],
+   "description": "property_h2 / property_air, e.g. RRA"
+  },
+  "fracture_mode": {
+   "enum": [
+    "ductile dimple",
+    "quasi-cleavage",
+    "intergranular",
+    "transgranular cleavage",
+    "mixed",
+    "unknown"
+   ]
+  },
+  "derived_fields": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "extraction_pass": {
+   "type": "integer"
+  },
+  "human_verified": {
+   "type": "boolean"
+  },
+  "notes": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "property_reference": {
+   "type": [
+    "number",
+    "null"
+   ],
+   "description": "property value in the inert/reference environment"
+  },
+  "reference_environment": {
+   "enum": [
+    "air",
+    "helium",
+    "nitrogen",
+    "argon",
+    "vacuum",
+    "uncharged",
+    "unknown"
+   ]
+  },
+  "composition_basis": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "enum": [
+    "heat_analysis",
+    "nominal",
+    "spec_midpoint",
+    null
+   ],
+   "description": "Whether the composition is a measured heat/weld analysis or a nominal composition."
+  },
+  "composition_source": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "The table or section the composition was read from."
+  },
+  "md30_calculated": {
+   "type": [
+    "number",
+    "null"
+   ],
+   "description": "Angel Md30 in degrees C, computed from composition. Derived, never reported."
+  },
+  "ni_equivalent_reported": {
+   "type": [
+    "number",
+    "null"
+   ],
+   "description": "Nickel equivalent as printed by the source, which may use a different expression."
+  },
+  "derived_assumptions": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "Elements taken as zero when computing derived values, and why."
+  }
+ },
+ "additionalProperties": false
+}
