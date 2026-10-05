@@ -1,12 +1,12 @@
-# Hydrogen Embrittlement in Austenetic Stainless Steels
+# HE-Austenite
 
 An open dataset of hydrogen embrittlement in austenitic stainless steels tested in **hydrogen gas**, with the weld zone recorded for every row.
 
-**Version 0.2** · 113 records · 45 fields · 9 sources, 1983–2024 · Data CC BY 4.0 · Code MIT
+**Version 0.3** · 113 records · 45 fields · 9 sources, 1983–2024 · Data CC BY 4.0 · Code MIT
 
-v0.2 adds per-heat composition, a nickel equivalent recomputed on one expression for every record, and Md30. See [Changes in v0.2](#changes-in-v02).
+v0.3 corrects two errors found in the first deposit of v0.2 and keeps everything that version added: per-heat composition, a nickel equivalent recomputed on one expression for every record, and Md30. See [Changes](#changes).
 
-**On the numbering.** An untagged snapshot of this repository was downloadable from 23 September 2026 and has been used in at least one external analysis, where it is cited as v0.1. It carried no composition data. v0.2 is the first tagged and archived release; cite it by its DOI and its version together.
+**On the numbering.** An untagged snapshot of this repository was downloadable from 23 September 2026 and has been used in at least one external analysis, where it is cited as v0.1. It carried no composition data. v0.2 was the first archived release, deposited on 2 October 2026, and v0.3 supersedes it. Cite a release by its DOI and its version together.
 
 Values were extracted by hand from published tables. No new experiments were performed, and no source document is redistributed here.
 
@@ -44,7 +44,7 @@ The alloy family ordering follows austenite stability. Type 310 and the nitrogen
 
 ### Composition, and what it accounts for
 
-v0.2 carries the composition each source published for the heat, weld deposit or filler that was tested, so austenite stability can be read from the data rather than asserted. The nickel equivalent is recomputed for every record from one expression, Hirayama's six-element form:
+v0.3 carries the composition each source published for the heat, weld deposit or filler that was tested, so austenite stability can be read from the data rather than asserted. The nickel equivalent is recomputed for every record from one expression, Hirayama's six-element form:
 
 `Ni_eq = Ni + 0.65 Cr + 0.98 Mo + 1.05 Mn + 0.35 Si + 12.6 C`
 
@@ -61,7 +61,7 @@ Ductility retained rises with the nickel equivalent: Spearman ρ = 0.60 across t
 
 **What this does and does not show.** The variation is *between* alloy families, not within one. The low band is 26 of 27 records from the type 304 family; the high band is types 316/317, 21-6-9 and 22-13-5. Restricted to the type 304 family alone, where nine materials span Ni_eq 23.0 to 26.5, the relationship disappears (ρ = −0.12, p = 0.77). So in this dataset the nickel equivalent is close to a restatement of alloy family, and it should not be read as a predictor that resolves differences between heats of the same grade. The result is not an artefact of the mixed reference environments: restricting to air and helium references, which drops the twelve records referenced against the uncharged condition, leaves ρ = 0.63 across 18 materials (p = 0.005).
 
-**Md30 does not survive the same test.** Angel's expression is fitted on 300-series compositions; applied to the manganese- and nitrogen-strengthened grades it returns temperatures below absolute zero, so v0.2 computes it only inside its fitted range (55 records). Within that range it carries no relationship with ductility retained here: ρ = −0.42 across 14 materials, p = 0.13. The strong-looking correlation that appears when the expression is extrapolated to 21-6-9 and 22-13-5 is an artefact of the extrapolation and is not reported.
+**Md30 does not survive the same test.** Angel's expression is fitted on 300-series compositions; applied to the manganese- and nitrogen-strengthened grades it returns temperatures below absolute zero, so it is computed only inside its fitted range (55 records). Within that range it carries no relationship with ductility retained here: ρ = −0.43 across 14 materials, p = 0.12. The strong-looking correlation that appears when the expression is extrapolated to 21-6-9 and 22-13-5 is an artefact of the extrapolation and is not reported.
 
 The weld penalty is not simply a composition effect, but the evidence for that is thin:
 
@@ -93,8 +93,8 @@ Meanwhile `ferrite_number` is populated for **2 of 113 records** here — the tw
 ## Repository contents
 
 ```
-data/     he_austenite_v0.2.csv        the dataset, 113 records, 45 fields
-          HE-Austenite_v0.2.xlsx       same rows plus summary, data dictionary, sources, extraction log
+data/     he_austenite_v0.3.csv        the dataset, 113 records, 45 fields
+          HE-Austenite_v0.3.xlsx       same rows plus summary, data dictionary, sources, extraction log
           records_raw.json             raw extraction records with full provenance notes
           compositions.csv             one row per heat, weld deposit or filler, with the table it came from
           record_composition_map.csv   which record uses which composition
@@ -136,7 +136,7 @@ Not every field is populated for every record. The full table is in `docs/data_d
 | `heat` | 16 of 113 |
 | `ferrite_number` | **2 of 113** |
 
-Composition and the values derived from it, new in v0.2:
+Composition and the values derived from it:
 
 | Field | Populated |
 |---|---|
@@ -160,7 +160,7 @@ The 11 records with no composition are the ones whose source names no heat: five
 
 ## Known gaps
 
-- The heat affected zone and fusion line are defined in the `zone` vocabulary but carry **no records** in v0.2.
+- The heat affected zone and fusion line are defined in the `zone` vocabulary but carry **no records**.
 - Four relevant studies report results only in figures and are not included: Hirata (2015), Yamabe et al. (2017), Zhang et al. (2013), and the remainder of Matsuoka et al. (2017) beyond the one numeric value used. Hirata is the most important and is the first target for the next release.
 - Family medians for types 321/347 (n = 3), type 310 (n = 2), duplex (n = 2) and A286 (n = 1) rest on few records and are indicative only.
 - Reference environments are mixed: 48 records against air, 28 against high-pressure helium, 32 against the uncharged condition, 5 against nitrogen or argon. A helium reference at test pressure is stricter than an air reference. The field is recorded so users can filter. Twelve of the 14 weld-metal records use an uncharged reference.
@@ -175,8 +175,8 @@ pip install -r requirements.txt
 # run from the repository root
 python scripts/normalise.py data/records_raw.json   # validate and recompute derived values
 python scripts/apply_compositions.py                # join compositions, recompute Ni_eq and Md30
-python scripts/build_outputs.py                     # clean, write data/he_austenite_v0.2.csv and data/clean.json
-python scripts/build_workbook.py                    # rebuild data/HE-Austenite_v0.2.xlsx
+python scripts/build_outputs.py                     # clean, write data/he_austenite_v0.3.csv and data/clean.json
+python scripts/build_workbook.py                    # rebuild data/HE-Austenite_v0.3.xlsx
 python scripts/make_figures.py                      # regenerate figures/
 ```
 
@@ -184,7 +184,7 @@ python scripts/make_figures.py                      # regenerate figures/
 
 Caskey, DP-1643 (1983) · San Marchi and Somerday, SAND2012-7321 (2012) · Balch et al., PVP2015-45591 · Michler et al., Int. J. Hydrogen Energy (2009) · Nakamura et al., Trans. JSME (2018) · Younes et al., Int. J. Hydrogen Energy (2013) · Iyer, Can. Metall. Q. 28 (2) (1989) 153 · Fukunaga, Eng. Fail. Anal. (2024) · Matsuoka et al., Solid State Phenomena (2017).
 
-Full citations are in `docs/data_dictionary.md` and in the Sources sheet of the workbook. The data descriptor manuscript is being revised against v0.2 and will be added to `paper/` when it matches the release.
+Full citations are in `docs/data_dictionary.md` and in the Sources sheet of the workbook. The data descriptor manuscript is being revised against v0.3 and will be added to `paper/` when it matches the release.
 
 ## Corrections and contributions
 
@@ -192,18 +192,33 @@ If a value here disagrees with the source in front of you, open an issue with th
 
 An independent re-check of records marked `verified = no` is as useful as new data, and is credited the same way.
 
-## Changes in v0.2
+## Changes
+
+### v0.3, 4 October 2026
+
+These two errors were found by an independent check of the released file and are the reason v0.3 exists.
+
+- `ni_equivalent_reported` was filled for all 93 records with a copy of the recomputed value, because the script copied it from the record on any run after the first. Only 15 records have a value their source actually printed: the twelve Balch welds at 26.49 and the three Fukunaga records at 28.5 and 34.8. The source-printed values are now declared per heat in `data/compositions.csv` and the script never reads them back from the record.
+- Four completeness figures in the data dictionary were typed rather than computed and were wrong: `Si_wt_pct` and `Mn_wt_pct` are 98 of 113 rather than 102, `Mo_wt_pct` is 48 rather than 60, and `N_wt_pct` is 72 rather than 55. `scripts/check_dictionary.py` now checks every completeness figure against the data.
+- 15 records carried nominal chromium, nickel, manganese and nitrogen values from an early extraction pass, while `composition_basis` and `composition_source` on the same rows named a measured heat analysis. The declared composition now wins, so the nineteen Caskey records use the heat analyses in Appendix D of DP-1643 rather than the nominal ranges in Table A-1. Their nickel equivalents changed, and the Caskey 304L heat now computes to 24.56, identical to Sandia heat C83, which is the independent cross-check that the two documents describe the same material. The only statistic in this README that moved is the Md30 correlation, from ρ = −0.42 to ρ = −0.43.
+- `scripts/validate_release.py` is new. It recomputes every derived value from the released CSV, checks the composition columns against `compositions.csv` through the record map, range-checks the numbers, looks for duplicated measurements, and re-derives every statistic this README quotes. The release is not published unless it passes.
+
+### v0.2, 2 October 2026
 
 - Per-heat composition added for 102 of 113 records, as ten element columns plus `composition_basis` and `composition_source`. Sources are in `data/compositions.csv`.
 - `ni_equivalent` is now recomputed for every record from one expression. Values a source printed moved to `ni_equivalent_reported`. Coverage 14 → 93 records.
 - `md30_calculated` added, 55 records: computed only inside the composition range Angel's expression was fitted on, because outside it the linear form returns temperatures below absolute zero.
 - Figure 4 added. The austenite-stability claim in this README is now tested against the data, and is reported with the limits the test showed: it holds between alloy families and not within the type 304 family.
 - Schema extended for the new fields; `scripts/apply_compositions.py` is new and is the only place composition enters the records.
-- No mechanical property, ratio or record identifier changed. v0.2 is additive: anything built on the September snapshot still works.
+- No mechanical property, ratio or record identifier changed since the September snapshot, so anything built on it still works.
 
 ## Citation
 
-See `CITATION.cff`. Once the release is archived on Zenodo, cite the DOI.
+Cite the version you used.
+
+> Faizan, M. (2026). HE-Austenite: hydrogen embrittlement of austenitic stainless steels in gaseous hydrogen, separating weld metal from base metal, with per-heat composition (v0.3) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23143388
+
+`10.5281/zenodo.23143388` is this version. The concept DOI `10.5281/zenodo.22922356` always resolves to the newest one, and is the right link for a CV or a reading list. If your results depend on the values, cite the version. `CITATION.cff` carries the same details in machine-readable form.
 
 ## Licence
 

@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "HE-Austenite: an open dataset of hydrogen embrittlement in austenitic stainless steels tested in hydrogen gas"
+title: "HE-Austenite: an open dataset of hydrogen embrittlement in austenitic stainless steels in gaseous hydrogen, with weld zone and per-heat composition"
 message: "If you use this dataset, please cite it."
 type: dataset
 abstract: >-
@@ -16,11 +16,12 @@ authors:
   - given-names: Muhammad
     family-names: Faizan
     email: m.faizansworkspace@gmail.com
-version: "0.2"
-date-released: "2026-10-02"
+version: "0.3"
+doi: "10.5281/zenodo.23143388"
+date-released: "2026-10-04"
 license: CC-BY-4.0
 license-url: "https://creativecommons.org/licenses/by/4.0/"
-repository-code: "https://github.com/mfaizansworkspace-ai/Hydrogen-Embrittlement-in-Austenitic-SS"
+repository-code: "https://github.com/mfaizansworkspace-ai/Hydrogen-Embrittlement-in-Austenitic-Stainless-Steels"
 keywords:
   - hydrogen embrittlement
   - austenitic stainless steel
