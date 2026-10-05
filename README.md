@@ -10,7 +10,7 @@ v0.3 corrects two errors found in the first deposit of v0.2 and keeps everything
 
 Values were extracted by hand from published tables. No new experiments were performed, and no source document is redistributed here.
 
-## Why this dataset exists
+## Objective
 
 Hydrogen infrastructure is welded. Refuelling stations run at 70 MPa, storage vessels and tube trailers are welded assemblies, and repurposing existing pipe networks depends on how the joints behave rather than the plate.
 
