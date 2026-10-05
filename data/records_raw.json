@@ -16,11 +16,11 @@
    "C": 0.03,
    "Si": 0.43,
    "Mn": 1.57,
-   "Cr": 19.0,
-   "Ni": 10.0,
+   "Cr": 18.35,
+   "Ni": 10.29,
    "Mo": 0.17
   },
-  "ni_equivalent": 24.69,
+  "ni_equivalent": 24.56,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "hydrogen_exposure": "gaseous in-situ",
@@ -48,8 +48,8 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 24.69,
-  "md30_calculated": 24.0
+  "ni_equivalent_reported": null,
+  "md30_calculated": 30.2
  },
  {
   "record_id": "CASKEY-T3-1-EL",
@@ -68,11 +68,11 @@
    "C": 0.03,
    "Si": 0.43,
    "Mn": 1.57,
-   "Cr": 19.0,
-   "Ni": 10.0,
+   "Cr": 18.35,
+   "Ni": 10.29,
    "Mo": 0.17
   },
-  "ni_equivalent": 24.69,
+  "ni_equivalent": 24.56,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "hydrogen_exposure": "gaseous in-situ",
@@ -100,8 +100,8 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 24.69,
-  "md30_calculated": 24.0
+  "ni_equivalent_reported": null,
+  "md30_calculated": 30.2
  },
  {
   "record_id": "CASKEY-T3-2-RA",
@@ -120,11 +120,11 @@
    "C": 0.03,
    "Si": 0.43,
    "Mn": 1.57,
-   "Cr": 19.0,
-   "Ni": 10.0,
+   "Cr": 18.35,
+   "Ni": 10.29,
    "Mo": 0.17
   },
-  "ni_equivalent": 24.69,
+  "ni_equivalent": 24.56,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "hydrogen_exposure": "gaseous in-situ",
@@ -152,8 +152,8 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 24.69,
-  "md30_calculated": 24.0
+  "ni_equivalent_reported": null,
+  "md30_calculated": 30.2
  },
  {
   "record_id": "CASKEY-T3-2-EL",
@@ -172,11 +172,11 @@
    "C": 0.03,
    "Si": 0.43,
    "Mn": 1.57,
-   "Cr": 19.0,
-   "Ni": 10.0,
+   "Cr": 18.35,
+   "Ni": 10.29,
    "Mo": 0.17
   },
-  "ni_equivalent": 24.69,
+  "ni_equivalent": 24.56,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "hydrogen_exposure": "gaseous in-situ",
@@ -204,8 +204,8 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 24.69,
-  "md30_calculated": 24.0
+  "ni_equivalent_reported": null,
+  "md30_calculated": 30.2
  },
  {
   "record_id": "CASKEY-T3-3-RA",
@@ -399,12 +399,12 @@
   "composition_wt_pct": {
    "C": 0.015,
    "Si": 0.24,
-   "Mn": 9.0,
-   "Cr": 21.0,
-   "Ni": 6.0,
-   "N": 0.275
+   "Mn": 9.01,
+   "Cr": 20.32,
+   "Ni": 6.71,
+   "N": 0.35
   },
-  "ni_equivalent": 29.37,
+  "ni_equivalent": 29.65,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "hydrogen_exposure": "gaseous in-situ",
@@ -431,7 +431,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-5",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 29.37
+  "ni_equivalent_reported": null
  },
  {
   "record_id": "CASKEY-T3-5-EL",
@@ -449,12 +449,12 @@
   "composition_wt_pct": {
    "C": 0.015,
    "Si": 0.24,
-   "Mn": 9.0,
-   "Cr": 21.0,
-   "Ni": 6.0,
-   "N": 0.275
+   "Mn": 9.01,
+   "Cr": 20.32,
+   "Ni": 6.71,
+   "N": 0.35
   },
-  "ni_equivalent": 29.37,
+  "ni_equivalent": 29.65,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "hydrogen_exposure": "gaseous in-situ",
@@ -481,7 +481,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-5",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 29.37
+  "ni_equivalent_reported": null
  },
  {
   "record_id": "CASKEY-T3-6-RA",
@@ -499,12 +499,12 @@
   "composition_wt_pct": {
    "C": 0.015,
    "Si": 0.24,
-   "Mn": 9.0,
-   "Cr": 21.0,
-   "Ni": 6.0,
-   "N": 0.275
+   "Mn": 9.01,
+   "Cr": 20.32,
+   "Ni": 6.71,
+   "N": 0.35
   },
-  "ni_equivalent": 29.37,
+  "ni_equivalent": 29.65,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "hydrogen_exposure": "gaseous in-situ",
@@ -531,7 +531,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-5",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 29.37
+  "ni_equivalent_reported": null
  },
  {
   "record_id": "CASKEY-T3-6-EL",
@@ -549,12 +549,12 @@
   "composition_wt_pct": {
    "C": 0.015,
    "Si": 0.24,
-   "Mn": 9.0,
-   "Cr": 21.0,
-   "Ni": 6.0,
-   "N": 0.275
+   "Mn": 9.01,
+   "Cr": 20.32,
+   "Ni": 6.71,
+   "N": 0.35
   },
-  "ni_equivalent": 29.37,
+  "ni_equivalent": 29.65,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "hydrogen_exposure": "gaseous in-situ",
@@ -581,7 +581,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-5",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 29.37
+  "ni_equivalent_reported": null
  },
  {
   "doi": "OSTI-5906050",
@@ -593,7 +593,7 @@
   "heat_input_kJ_per_mm": null,
   "filler_metal": null,
   "zone": "base metal",
-  "ni_equivalent": 24.69,
+  "ni_equivalent": 24.56,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "charging_current_density_A_per_m2": null,
@@ -612,8 +612,8 @@
    "C": 0.03,
    "Si": 0.43,
    "Mn": 1.57,
-   "Cr": 19.0,
-   "Ni": 10.0,
+   "Cr": 18.35,
+   "Ni": 10.29,
    "Mo": 0.17
   },
   "record_id": "CASKEY-T6-1-TS",
@@ -632,8 +632,8 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 24.69,
-  "md30_calculated": 24.0
+  "ni_equivalent_reported": null,
+  "md30_calculated": 30.2
  },
  {
   "doi": "OSTI-5906050",
@@ -645,7 +645,7 @@
   "heat_input_kJ_per_mm": null,
   "filler_metal": null,
   "zone": "base metal",
-  "ni_equivalent": 24.69,
+  "ni_equivalent": 24.56,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "charging_current_density_A_per_m2": null,
@@ -664,8 +664,8 @@
    "C": 0.03,
    "Si": 0.43,
    "Mn": 1.57,
-   "Cr": 19.0,
-   "Ni": 10.0,
+   "Cr": 18.35,
+   "Ni": 10.29,
    "Mo": 0.17
   },
   "record_id": "CASKEY-T6-1-PS",
@@ -684,8 +684,8 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 24.69,
-  "md30_calculated": 24.0
+  "ni_equivalent_reported": null,
+  "md30_calculated": 30.2
  },
  {
   "doi": "OSTI-5906050",
@@ -697,7 +697,7 @@
   "heat_input_kJ_per_mm": null,
   "filler_metal": null,
   "zone": "base metal",
-  "ni_equivalent": 24.69,
+  "ni_equivalent": 24.56,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "charging_current_density_A_per_m2": null,
@@ -716,8 +716,8 @@
    "C": 0.03,
    "Si": 0.43,
    "Mn": 1.57,
-   "Cr": 19.0,
-   "Ni": 10.0,
+   "Cr": 18.35,
+   "Ni": 10.29,
    "Mo": 0.17
   },
   "record_id": "CASKEY-T6-2-TS",
@@ -736,8 +736,8 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 24.69,
-  "md30_calculated": 24.0
+  "ni_equivalent_reported": null,
+  "md30_calculated": 30.2
  },
  {
   "doi": "OSTI-5906050",
@@ -749,7 +749,7 @@
   "heat_input_kJ_per_mm": null,
   "filler_metal": null,
   "zone": "base metal",
-  "ni_equivalent": 24.69,
+  "ni_equivalent": 24.56,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "charging_current_density_A_per_m2": null,
@@ -768,8 +768,8 @@
    "C": 0.03,
    "Si": 0.43,
    "Mn": 1.57,
-   "Cr": 19.0,
-   "Ni": 10.0,
+   "Cr": 18.35,
+   "Ni": 10.29,
    "Mo": 0.17
   },
   "record_id": "CASKEY-T6-2-PS",
@@ -788,8 +788,8 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 24.69,
-  "md30_calculated": 24.0
+  "ni_equivalent_reported": null,
+  "md30_calculated": 30.2
  },
  {
   "doi": "OSTI-5906050",
@@ -801,7 +801,7 @@
   "heat_input_kJ_per_mm": null,
   "filler_metal": null,
   "zone": "base metal",
-  "ni_equivalent": 24.69,
+  "ni_equivalent": 24.56,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "charging_current_density_A_per_m2": null,
@@ -820,8 +820,8 @@
    "C": 0.03,
    "Si": 0.43,
    "Mn": 1.57,
-   "Cr": 19.0,
-   "Ni": 10.0,
+   "Cr": 18.35,
+   "Ni": 10.29,
    "Mo": 0.17
   },
   "record_id": "CASKEY-T10-1-PS",
@@ -840,8 +840,8 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 24.69,
-  "md30_calculated": 24.0
+  "ni_equivalent_reported": null,
+  "md30_calculated": 30.2
  },
  {
   "doi": "OSTI-5906050",
@@ -853,7 +853,7 @@
   "heat_input_kJ_per_mm": null,
   "filler_metal": null,
   "zone": "base metal",
-  "ni_equivalent": 24.69,
+  "ni_equivalent": 24.56,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "charging_current_density_A_per_m2": null,
@@ -872,8 +872,8 @@
    "C": 0.03,
    "Si": 0.43,
    "Mn": 1.57,
-   "Cr": 19.0,
-   "Ni": 10.0,
+   "Cr": 18.35,
+   "Ni": 10.29,
    "Mo": 0.17
   },
   "record_id": "CASKEY-T10-1-EL",
@@ -892,8 +892,8 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 24.69,
-  "md30_calculated": 24.0
+  "ni_equivalent_reported": null,
+  "md30_calculated": 30.2
  },
  {
   "doi": "OSTI-5906050",
@@ -905,7 +905,7 @@
   "heat_input_kJ_per_mm": null,
   "filler_metal": null,
   "zone": "base metal",
-  "ni_equivalent": 29.37,
+  "ni_equivalent": 29.65,
   "delta_ferrite_pct": null,
   "pre_strain_pct": null,
   "charging_current_density_A_per_m2": null,
@@ -922,10 +922,10 @@
   "composition_wt_pct": {
    "C": 0.015,
    "Si": 0.24,
-   "Mn": 9.0,
-   "Cr": 21.0,
-   "Ni": 6.0,
-   "N": 0.275
+   "Mn": 9.01,
+   "Cr": 20.32,
+   "Ni": 6.71,
+   "N": 0.35
   },
   "record_id": "CASKEY-T11-1-PS",
   "alloy_grade": "Nitronic 40 (21-6-9)",
@@ -943,7 +943,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Caskey DP-1643 Appendix D Data Sheet D-5",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 29.37
+  "ni_equivalent_reported": null
  },
  {
   "doi": "ASME PVP2015-45591",
@@ -979,8 +979,8 @@
   "test_type": "tensile",
   "fracture_mode": "unknown",
   "derived_fields": [
-   "ni_equivalent",
    "relative_ratio",
+   "ni_equivalent",
    "md30_calculated"
   ],
   "extraction_pass": 1,
@@ -1031,8 +1031,8 @@
   "test_type": "tensile",
   "fracture_mode": "unknown",
   "derived_fields": [
-   "ni_equivalent",
    "relative_ratio",
+   "ni_equivalent",
    "md30_calculated"
   ],
   "extraction_pass": 1,
@@ -1083,8 +1083,8 @@
   "test_type": "tensile",
   "fracture_mode": "unknown",
   "derived_fields": [
-   "ni_equivalent",
    "relative_ratio",
+   "ni_equivalent",
    "md30_calculated"
   ],
   "extraction_pass": 1,
@@ -1135,8 +1135,8 @@
   "test_type": "tensile",
   "fracture_mode": "unknown",
   "derived_fields": [
-   "ni_equivalent",
    "relative_ratio",
+   "ni_equivalent",
    "md30_calculated"
   ],
   "extraction_pass": 1,
@@ -1187,8 +1187,8 @@
   "test_type": "tensile",
   "fracture_mode": "unknown",
   "derived_fields": [
-   "ni_equivalent",
    "relative_ratio",
+   "ni_equivalent",
    "md30_calculated"
   ],
   "extraction_pass": 1,
@@ -1239,8 +1239,8 @@
   "test_type": "tensile",
   "fracture_mode": "unknown",
   "derived_fields": [
-   "ni_equivalent",
    "relative_ratio",
+   "ni_equivalent",
    "md30_calculated"
   ],
   "extraction_pass": 1,
@@ -1291,8 +1291,8 @@
   "test_type": "tensile",
   "fracture_mode": "unknown",
   "derived_fields": [
-   "ni_equivalent",
    "relative_ratio",
+   "ni_equivalent",
    "md30_calculated"
   ],
   "extraction_pass": 1,
@@ -1343,8 +1343,8 @@
   "test_type": "tensile",
   "fracture_mode": "unknown",
   "derived_fields": [
-   "ni_equivalent",
    "relative_ratio",
+   "ni_equivalent",
    "md30_calculated"
   ],
   "extraction_pass": 1,
@@ -1395,8 +1395,8 @@
   "test_type": "tensile",
   "fracture_mode": "unknown",
   "derived_fields": [
-   "ni_equivalent",
    "relative_ratio",
+   "ni_equivalent",
    "md30_calculated"
   ],
   "extraction_pass": 1,
@@ -1447,8 +1447,8 @@
   "test_type": "tensile",
   "fracture_mode": "unknown",
   "derived_fields": [
-   "ni_equivalent",
    "relative_ratio",
+   "ni_equivalent",
    "md30_calculated"
   ],
   "extraction_pass": 1,
@@ -1499,8 +1499,8 @@
   "test_type": "tensile",
   "fracture_mode": "unknown",
   "derived_fields": [
-   "ni_equivalent",
    "relative_ratio",
+   "ni_equivalent",
    "md30_calculated"
   ],
   "extraction_pass": 1,
@@ -1551,8 +1551,8 @@
   "test_type": "tensile",
   "fracture_mode": "unknown",
   "derived_fields": [
-   "ni_equivalent",
    "relative_ratio",
+   "ni_equivalent",
    "md30_calculated"
   ],
   "extraction_pass": 1,
@@ -1618,7 +1618,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 26.45
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -1744,7 +1744,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo, N taken as 0 for the derived values",
-  "ni_equivalent_reported": 23.96,
+  "ni_equivalent_reported": null,
   "md30_calculated": 31.9
  },
  {
@@ -1796,7 +1796,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 24.56,
+  "ni_equivalent_reported": null,
   "md30_calculated": 30.2
  },
  {
@@ -1847,7 +1847,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 23.53
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -1936,7 +1936,7 @@
   "notes": "SAND2012-7321 (San Marchi & Somerday), chapter 2101 Table 3.1.1.1. Precharged 69 MPa H2, 430 K, 1000 h. Ref [3].",
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
-  "ni_equivalent_reported": 23.03
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -1987,7 +1987,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2039,7 +2039,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2091,7 +2091,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2143,7 +2143,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2195,7 +2195,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2247,7 +2247,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2299,7 +2299,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2351,7 +2351,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2403,7 +2403,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2455,7 +2455,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2507,7 +2507,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2559,7 +2559,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2611,7 +2611,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2663,7 +2663,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2101 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.61,
+  "ni_equivalent_reported": null,
   "md30_calculated": -4.5
  },
  {
@@ -2714,7 +2714,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.42
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -2764,7 +2764,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.42
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -2814,7 +2814,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.42
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -2864,7 +2864,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.42
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -2914,7 +2914,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.42
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -2964,7 +2964,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.42
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3014,7 +3014,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.42
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3064,7 +3064,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.42
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3114,7 +3114,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.42
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3164,7 +3164,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.42
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3214,7 +3214,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.42
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3264,7 +3264,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.61
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3314,7 +3314,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.61
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3364,7 +3364,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.61
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3414,7 +3414,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.61
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3464,7 +3464,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.61
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3514,7 +3514,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.61
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3564,7 +3564,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.61
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3614,7 +3614,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.61
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3664,7 +3664,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.61
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3714,7 +3714,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.61
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3764,7 +3764,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2202 Table 1.1.1",
   "derived_assumptions": "Mo taken as 0 for the derived values",
-  "ni_equivalent_reported": 31.61
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -3854,7 +3854,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2103 Table 1.1.1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 29.1,
+  "ni_equivalent_reported": null,
   "md30_calculated": -37.0
  },
  {
@@ -3906,7 +3906,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2103 Table 1.1.1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 29.96,
+  "ni_equivalent_reported": null,
   "md30_calculated": -48.0
  },
  {
@@ -3996,7 +3996,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2103 Table 1.1.1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.32,
+  "ni_equivalent_reported": null,
   "md30_calculated": 13.8
  },
  {
@@ -4200,7 +4200,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2104 Table 1.1.2",
   "derived_assumptions": "Mo, N taken as 0 for the derived values",
-  "ni_equivalent_reported": 24.51,
+  "ni_equivalent_reported": null,
   "md30_calculated": 25.0
  },
  {
@@ -4252,7 +4252,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2104 Table 1.1.2",
   "derived_assumptions": "Mo, N taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.25,
+  "ni_equivalent_reported": null,
   "md30_calculated": 12.4
  },
  {
@@ -4438,7 +4438,7 @@
   "notes": "SAND2012-7321 chapter 2201 Table 3.1.1.1 (22-13-5). As-received bar; no loss. Ref [6,9,18].",
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2201 Table 1.1.1",
-  "ni_equivalent_reported": 34.89
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -4488,7 +4488,7 @@
   "notes": "SAND2012-7321 chapter 2201 Table 3.1.1.1 (22-13-5). Annealed plate, precharged 24 MPa 473 K 10.5 d (~50 wppm) then tested in 69 MPa H2; no loss.",
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2201 Table 1.1.1",
-  "ni_equivalent_reported": 35.31
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -4539,7 +4539,7 @@
   "notes": "SAND2012-7321 chapter 2201 Table 3.1.1.1 (22-13-5). Warm-worked bar; no loss. Ref [17].",
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2201 Table 1.1.1",
-  "ni_equivalent_reported": 35.62
+  "ni_equivalent_reported": null
  },
  {
   "doi": "SAND2012-7321",
@@ -4590,7 +4590,7 @@
   "notes": "SAND2012-7321 chapter 2201 Table 3.1.1.1 (22-13-5). HERF; low ductility in both environments. Ref [17].",
   "composition_basis": "heat_analysis",
   "composition_source": "SAND2012-7321 chapter 2201 Table 1.1.1",
-  "ni_equivalent_reported": 35.62
+  "ni_equivalent_reported": null
  },
  {
   "uns_number": null,
@@ -4641,7 +4641,7 @@
   "notes": "Michler et al. 2009 Table 2. Tested in 1 MPa H2 vs 1 MPa He at 50 C. Steel 7, drawn bar; duplex string-like alpha'/gamma after straining. bar, longitudinal orientation.",
   "composition_basis": "heat_analysis",
   "composition_source": "Michler et al., Int. J. Hydrogen Energy 34 (2009) 3201, Table 1 (mill 3.1B certificate)",
-  "ni_equivalent_reported": 27.22,
+  "ni_equivalent_reported": null,
   "md30_calculated": -8.9
  },
  {
@@ -4693,7 +4693,7 @@
   "notes": "Michler et al. 2009 Table 2. Tested in 1 MPa H2 vs 1 MPa He at 50 C. Steel 8, rolled plate; layered alpha'-gamma from Ni macro-segregation 9.5-13 wt%. plate, transverse orientation.",
   "composition_basis": "heat_analysis",
   "composition_source": "Michler et al., Int. J. Hydrogen Energy 34 (2009) 3201, Table 1 (mill 3.1B certificate)",
-  "ni_equivalent_reported": 27.16,
+  "ni_equivalent_reported": null,
   "md30_calculated": -14.2
  },
  {
@@ -4745,7 +4745,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Nakamura et al., Trans. JSME 84 (2018) 17-00437, Table 1",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 29.88,
+  "ni_equivalent_reported": null,
   "md30_calculated": -45.0
  },
  {
@@ -4797,7 +4797,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Nakamura et al., Trans. JSME 84 (2018) 17-00437, Table 2",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 30.05
+  "ni_equivalent_reported": null
  },
  {
   "uns_number": null,
@@ -4848,7 +4848,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Nakamura et al., Trans. JSME 84 (2018) 17-00437, Table 2",
   "derived_assumptions": "N taken as 0 for the derived values",
-  "ni_equivalent_reported": 30.05
+  "ni_equivalent_reported": null
  },
  {
   "uns_number": null,
@@ -4902,7 +4902,7 @@
   "notes": "Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864. Table 4. 304L tube, thermally charged in hydrogen gas to the stated content; RA loss reported rather than absolute values, so relative_ratio = 1 - loss/100. 304L TIG weld, 57 wppm hydrogen, RA loss 41%.",
   "composition_basis": "heat_analysis",
   "composition_source": "Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864, Table 1",
-  "ni_equivalent_reported": 25.45,
+  "ni_equivalent_reported": null,
   "md30_calculated": -2.2
  },
  {
@@ -4957,7 +4957,7 @@
   "notes": "Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864. Table 4. 304L tube, thermally charged in hydrogen gas to the stated content; RA loss reported rather than absolute values, so relative_ratio = 1 - loss/100. 304L TIG weld, 110 wppm hydrogen, RA loss 53%.",
   "composition_basis": "heat_analysis",
   "composition_source": "Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864, Table 1",
-  "ni_equivalent_reported": 25.45,
+  "ni_equivalent_reported": null,
   "md30_calculated": -2.2
  },
  {
@@ -5012,7 +5012,7 @@
   "notes": "Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864. Table 4. 304L tube, thermally charged in hydrogen gas to the stated content; RA loss reported rather than absolute values, so relative_ratio = 1 - loss/100. 304L TIG weld, 160 wppm hydrogen, RA loss 65%.",
   "composition_basis": "heat_analysis",
   "composition_source": "Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864, Table 1",
-  "ni_equivalent_reported": 25.45,
+  "ni_equivalent_reported": null,
   "md30_calculated": -2.2
  },
  {
@@ -5200,7 +5200,7 @@
   "notes": "Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864. Table 4. 304L tube, thermally charged in hydrogen gas to the stated content; RA loss reported rather than absolute values, so relative_ratio = 1 - loss/100. 304L base metal, 57 wppm hydrogen, RA loss 19%.",
   "composition_basis": "heat_analysis",
   "composition_source": "Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864, Table 1",
-  "ni_equivalent_reported": 24.79,
+  "ni_equivalent_reported": null,
   "md30_calculated": 7.5
  },
  {
@@ -5253,7 +5253,7 @@
   "notes": "Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864. Table 4. 304L tube, thermally charged in hydrogen gas to the stated content; RA loss reported rather than absolute values, so relative_ratio = 1 - loss/100. 304L base metal, 110 wppm hydrogen, RA loss 37%.",
   "composition_basis": "heat_analysis",
   "composition_source": "Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864, Table 1",
-  "ni_equivalent_reported": 24.79,
+  "ni_equivalent_reported": null,
   "md30_calculated": 7.5
  },
  {
@@ -5306,7 +5306,7 @@
   "notes": "Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864. Table 4. 304L tube, thermally charged in hydrogen gas to the stated content; RA loss reported rather than absolute values, so relative_ratio = 1 - loss/100. 304L base metal, 160 wppm hydrogen, RA loss 48%.",
   "composition_basis": "heat_analysis",
   "composition_source": "Younes et al., Int. J. Hydrogen Energy 38 (2013) 4864, Table 1",
-  "ni_equivalent_reported": 24.79,
+  "ni_equivalent_reported": null,
   "md30_calculated": 7.5
  },
  {
@@ -5357,7 +5357,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Iyer, Can. Metall. Q. 28 (1989) 153, section 2",
   "derived_assumptions": "Mo, N taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.17,
+  "ni_equivalent_reported": null,
   "md30_calculated": 1.1
  },
  {
@@ -5408,7 +5408,7 @@
   "composition_basis": "heat_analysis",
   "composition_source": "Iyer, Can. Metall. Q. 28 (1989) 153, section 2",
   "derived_assumptions": "Mo, N taken as 0 for the derived values",
-  "ni_equivalent_reported": 25.17,
+  "ni_equivalent_reported": null,
   "md30_calculated": 1.1
  },
  {
@@ -5564,7 +5564,7 @@
   "notes": "Fukunaga, Engineering Failure Analysis 160 (2024) 108158. SSRT on piping removed from a hydrogen refuelling station after two years of service. Elongation at break, 70 MPa H2 at 150 C vs air.",
   "composition_basis": "heat_analysis",
   "composition_source": "Fukunaga, Eng. Fail. Anal. 160 (2024) 108158, Table 1",
-  "ni_equivalent_reported": 34.84
+  "ni_equivalent_reported": 34.8
  },
  {
   "uns_number": null,
