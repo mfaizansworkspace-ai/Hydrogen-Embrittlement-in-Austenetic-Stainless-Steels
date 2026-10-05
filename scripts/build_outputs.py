@@ -83,7 +83,7 @@ if __name__=="__main__":
     recs=json.load(open(src))
     rows=clean(recs)
     cols=list(rows[0].keys())
-    with open("data/he_austenite_v0.2.csv","w",newline="") as f:
+    with open("data/he_austenite_v0.3.csv","w",newline="") as f:
         w=csv.DictWriter(f,fieldnames=cols); w.writeheader(); w.writerows(rows)
     json.dump({"rows":rows,"sources":SOURCES},open("data/clean.json","w"),indent=1)
     print(len(rows),"rows written")

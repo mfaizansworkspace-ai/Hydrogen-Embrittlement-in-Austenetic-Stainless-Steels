@@ -3,7 +3,7 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, Alignment, PatternFill, Border, Side
 from openpyxl.utils import get_column_letter
 import os, sys
-OUT=sys.argv[1] if len(sys.argv)>1 else "data/HE-Austenite_v0.2.xlsx"
+OUT=sys.argv[1] if len(sys.argv)>1 else "data/HE-Austenite_v0.3.xlsx"
 if not os.path.exists("data/clean.json"):
     raise SystemExit("data/clean.json not found. Run scripts/build_outputs.py first, from the repository root.")
 d=json.load(open("data/clean.json")); rows=d["rows"]; SRC=d["sources"]
@@ -16,11 +16,11 @@ def head(ws,n):
     ws.freeze_panes="A2"; ws.auto_filter.ref=ws.dimensions
 # Read me
 rm=wb.active; rm.title="Read me"
-for i,(t,sz,b) in enumerate([("HE-Austenite v0.2",14,True),
+for i,(t,sz,b) in enumerate([("HE-Austenite v0.3",14,True),
  ("Hydrogen embrittlement of austenitic stainless steels in gaseous hydrogen: base metal and welds",11,False),("",10,False),
  ("Scope: gaseous hydrogen only. Tested in high-pressure hydrogen gas, or thermally precharged in hydrogen gas and then tested.",10,False),
  ("Electrochemically charged studies are excluded: cathodic fugacity cannot be converted to an equivalent gas pressure without assumptions.",10,False),("",10,False),
- ("Release 0.2, 2 October 2026. The 'verified' column marks rows that were independently re-extracted and matched against the source.",10,False),
+ ("Release 0.3, 4 October 2026. The 'verified' column marks rows that were independently re-extracted and matched against the source.",10,False),
  ("Derived values (nickel equivalent, Md30, relative ratio) are flagged in the 'derived' column. The nickel equivalent is recomputed for every record from the composition using one expression; a value the source printed is kept separately in ni_equivalent_reported.",10,False),
  ("Composition is per heat, weld deposit or filler as the source reported it. composition_basis says whether it is a heat analysis or a nominal composition, and composition_source names the table it came from.",10,False),
  ("Sources whose data appears only in figures are listed in the Extraction log sheet and are not in the Data sheet.",10,False),("",10,False),
@@ -57,7 +57,7 @@ head(ws,n+2)
 B=get_column_letter(n+1); W=get_column_letter(n+2)
 # Summary
 s=wb.create_sheet("Summary")
-s["A1"]="HE-Austenite v0.2 — summary"; s["A1"].font=A(bold=True,size=14)
+s["A1"]="HE-Austenite v0.3 — summary"; s["A1"].font=A(bold=True,size=14)
 s["A2"]="Gaseous hydrogen only. All figures below are live formulas over the Data sheet."; s["A2"].font=A(size=10,italic=True)
 put=lambda cell,v,**k: (s.__setitem__(cell,v), setattr(s[cell],"font",A(**k)))
 put("A4","Counts",bold=True)

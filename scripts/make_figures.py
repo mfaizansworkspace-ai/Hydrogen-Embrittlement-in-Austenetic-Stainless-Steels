@@ -91,7 +91,7 @@ print(f"figures written | Fig.1 n={len(rows)} | Fig.2 304-family plotted {n304p}
 
 # ---- Figure 4: ductility retained against nickel equivalent
 import csv as _csv
-dat=[r for r in _csv.DictReader(open("data/he_austenite_v0.2.csv",encoding="utf-8"))
+dat=[r for r in _csv.DictReader(open("data/he_austenite_v0.3.csv",encoding="utf-8"))
      if r["property_name"]=="reduction of area" and r["relative_ratio"] and r["ni_equivalent"]
      and r["material_family"] != "precipitation-strengthened (A286)"
      # reports the same measurement as a Caskey record already in the set

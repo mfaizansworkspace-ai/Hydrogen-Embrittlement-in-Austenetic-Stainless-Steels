@@ -16,7 +16,8 @@ Rules, applied here and nowhere else:
     by derive_nieq and derive_md30 in compositions.csv. Md30 is not computed for
     duplex or precipitation-strengthened alloys; the Ni equivalent is not
     computed for duplex.
-  - A Ni equivalent printed by the source is moved to ni_equivalent_reported and
+  - A Ni equivalent printed by the source is declared in compositions.csv, copied to
+    ni_equivalent_reported and
     the ni_equivalent column is recomputed for every record from one expression,
     so the column is comparable across sources.
   - Mo and N that a source does not report are taken as zero ONLY for grades
@@ -50,6 +51,7 @@ def load_compositions() -> dict[str, dict]:
             "basis": row["composition_basis"],
             "source": row["composition_source"],
             "derive_nieq": row["derive_nieq"] == "yes",
+            "nieq_reported": float(row["ni_equivalent_reported"]) if row.get("ni_equivalent_reported", "").strip() else None,
             "derive_md30": row["derive_md30"] == "yes",
             "label": row["material_label"],
         }
@@ -73,6 +75,7 @@ def main() -> None:
     recs = json.load((DATA / "records_raw.json").open(encoding="utf-8"))
 
     filled = derived_nieq = derived_md30 = 0
+    overridden: list[tuple[str, list[str]]] = []
     for r in recs:
         key = mapping.get(r["record_id"])
         if not key:
@@ -80,11 +83,18 @@ def main() -> None:
         entry = comps[key]
         comp = dict(entry["composition"])
         if not r.get("composition_wt_pct"):
-            r["composition_wt_pct"] = comp
             filled += 1
         else:
-            comp = {**comp, **r["composition_wt_pct"]}  # keep what was already extracted
-            r["composition_wt_pct"] = comp
+            # The curated entry wins. An early extraction pass put nominal values on
+            # some records; letting those override the heat analysis declared here
+            # produced compositions that were half nominal and half measured, under a
+            # composition_basis that claimed the whole row was a heat analysis.
+            replaced = {k: v for k, v in r["composition_wt_pct"].items()
+                        if k in comp and comp[k] != v}
+            if replaced:
+                overridden.append((r["record_id"], sorted(replaced)))
+            comp = {**r["composition_wt_pct"], **comp}
+        r["composition_wt_pct"] = comp
         r["composition_basis"] = entry["basis"]
         r["composition_source"] = entry["source"]
 
@@ -99,9 +109,10 @@ def main() -> None:
 
         derived = r.setdefault("derived_fields", [])
         if entry["derive_nieq"]:
-            if r.get("ni_equivalent") is not None and r.get("ni_equivalent_reported") is None:
-                # the value carried before v0.2 was the one the source printed
-                r["ni_equivalent_reported"] = r["ni_equivalent"]
+            # A source-printed Ni equivalent is declared per heat in compositions.csv.
+            # It is never taken from the record, because after the first run the record
+            # already holds the recomputed value and copying it would fabricate agreement.
+            r["ni_equivalent_reported"] = entry["nieq_reported"]
             v = ni_equivalent_hirayama(work)
             if v is not None:
                 r["ni_equivalent"] = round(v, 2)
@@ -122,6 +133,9 @@ def main() -> None:
     print(f"    newly filled        {filled}")
     print(f"  ni_equivalent derived {derived_nieq}")
     print(f"  md30 derived          {derived_md30}")
+    if overridden:
+        print(f"  replaced earlier values on {len(overridden)} records, "
+              f"elements: {sorted({e for _, els in overridden for e in els})}")
     missing = [r["record_id"] for r in recs if not r.get("composition_wt_pct")]
     print(f"  still without         {len(missing)}: {', '.join(missing)}")
 
