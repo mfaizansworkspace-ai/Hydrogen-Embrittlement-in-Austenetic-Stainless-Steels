@@ -1,6 +1,6 @@
 # Data dictionary
 
-One record is one reported test condition and one property. Version 0.2, 45 columns.
+One record is one reported test condition and one property. Version 0.3, 45 columns.
 
 Composition columns are the analysis the source published for the heat, weld deposit or filler that was tested. `data/compositions.csv` holds one row per composition with the table it came from, and `data/record_composition_map.csv` says which record uses which. A composition is never carried across heats, and a specification range is never recorded as a measurement.
 
@@ -33,17 +33,17 @@ Composition columns are the analysis the source published for the heat, weld dep
 | `relative_ratio` | property_h2 / property_reference, or the ratio as the source printed it where absolute values were not given; RRA when the property is reduction of area | 113 of 113 |
 | `embrittlement_flag` | no measurable loss >= 0.95, moderate 0.80-0.95, significant < 0.80 | 113 of 113 |
 | `C_wt_pct` | Carbon, wt % | 99 of 113 |
-| `Si_wt_pct` | Silicon, wt % | 102 of 113 |
-| `Mn_wt_pct` | Manganese, wt % | 102 of 113 |
+| `Si_wt_pct` | Silicon, wt % | 98 of 113 |
+| `Mn_wt_pct` | Manganese, wt % | 98 of 113 |
 | `Cr_wt_pct` | Chromium, wt % | 102 of 113 |
 | `Ni_wt_pct` | Nickel, wt % | 102 of 113 |
-| `Mo_wt_pct` | Molybdenum, wt %, empty where the grade carries none | 60 of 113 |
-| `N_wt_pct` | Nitrogen, wt % | 55 of 113 |
+| `Mo_wt_pct` | Molybdenum, wt %, empty where the grade carries none | 48 of 113 |
+| `N_wt_pct` | Nitrogen, wt % | 72 of 113 |
 | `Cu_wt_pct`, `Nb_wt_pct`, `Ti_wt_pct` | Reported only for some grades | see the CSV |
 | `composition_basis` | `heat_analysis` for a measured heat, weld deposit or filler analysis; `nominal` for a nominal composition. A specification midpoint is never recorded as a measurement. | 102 of 113 |
 | `composition_source` | The table the composition was read from | 102 of 113 |
 | `ni_equivalent` | Nickel equivalent, wt %, recomputed for every record from the composition using Hirayama's six-element expression: Ni + 0.65 Cr + 0.98 Mo + 1.05 Mn + 0.35 Si + 12.6 C. Derived, never reported. | 93 of 113 |
-| `ni_equivalent_reported` | Nickel equivalent as the source printed it, which may use a different expression | 3 of 113 |
+| `ni_equivalent_reported` | Nickel equivalent as the source printed it, which may use a different expression | 15 of 113 |
 | `md30_calculated` | Angel Md30, degrees C: 413 − 462(C+N) − 9.2 Si − 8.1 Mn − 13.7 Cr − 9.5 Ni − 18.5 Mo. The temperature at which 30% strain produces 50% martensite. Computed only where the composition falls inside the range Angel's expression was fitted on (Mn ≤ 2.5, N ≤ 0.12, Cr ≤ 21.0, Mo ≤ 3.0, C ≤ 0.15); outside it the linear form returns values below absolute zero. Derived, never reported. | 55 of 113 |
 | `derived_assumptions` | Elements taken as zero when computing the derived values, for grades whose specification carries none. Mo in 42 records, N in 18, both in 5. The nickel equivalent has no nitrogen term so is unaffected; Md30 is sensitive to it, and an unreported nitrogen of 0.05 wt% would move Md30 by about 23 °C. | see the CSV |
 | `derived` | Fields computed rather than reported by the source | 113 of 113 |
